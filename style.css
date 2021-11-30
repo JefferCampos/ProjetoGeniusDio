@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(to right , rgb(134, 71, 173), rgba(13, 39, 114, 1));
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dio img {
+    height: 80px;
+    display: inline;
+    float: left;
+    padding: 15px;
+}
+
+.eduzz img {
+    height: 60px;
+    display: inline;
+    float: right;
+    padding: 20px;
+    
+}
+
+.main-game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    grid-gap: 10px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 580px;
+    height: 580px;
+    margin-top: -200px;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+
+.green {
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+
+.selected {
+    opacity: 0.6;
+}
